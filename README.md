@@ -1,160 +1,543 @@
+<!DOCTYPE html>
+<html data-markdown-preview-plus-context="html-export">
+  <head>
+    <meta charset="utf-8" />
+    <title>README</title>
+    <style>.emoji {
+  max-width: 1em !important;
+}
+del {
+  text-decoration: none;
+  position: relative;
+}
+del::after {
+  border-bottom: 1px solid black;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+ul.contains-task-list li.task-list-item {
+  position: relative;
+  list-style-type: none;
+}
+ul.contains-task-list li.task-list-item input.task-list-item-checkbox {
+  position: absolute;
+  transform: translateX(-100%);
+  width: 26px;
+}
+span.critic.comment {
+  position: relative;
+}
+span.critic.comment::before {
+  content: '\1f4ac';
+  position: initial;
+}
+span.critic.comment > span {
+  display: none;
+}
+span.critic.comment:hover > span {
+  display: initial;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border: 1px solid;
+  border-radius: 5px;
+  max-height: 4em;
+  overflow: auto;
+}
+span.critic.comment:focus > span {
+  display: initial;
+  text-decoration: underline;
+  position: initial;
+  top: auto;
+  left: auto;
+  border: initial;
+  border-radius: initial;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: transparent;
+}
 
-# Module 2 Final Project
+body {
+  padding: 2em;
+  font-size: 1.2em;
+  color: #2b2c27;
+  background-color: #eddab9;
+  overflow: auto;
+}
+body > :first-child,
+body > div.update-preview > :first-child {
+  margin-top: 0;
+}
+body > p,
+body > div.update-preview > p {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+}
+body > ul,
+body > div.update-preview > ul,
+body > ol,
+body > div.update-preview > ol {
+  margin-bottom: 1.5em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  color: #000000;
+}
+h1 {
+  font-size: 2.4em;
+  font-weight: 300;
+}
+h2 {
+  font-size: 1.8em;
+  font-weight: 400;
+}
+h3 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+h4 {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+h5 {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+h6 {
+  font-size: 1em;
+  font-weight: 600;
+}
+strong {
+  color: #000000;
+}
+del {
+  color: #55574d;
+}
+a,
+a code {
+  color: #15b5d2;
+}
+img {
+  max-width: 100%;
+}
+blockquote {
+  margin: 1.5em 0;
+  font-size: inherit;
+  color: #55574d;
+  border-color: #dcb878;
+  border-width: 4px;
+}
+hr {
+  margin: 3em 0;
+  border-top: 2px dashed #dcb878;
+  background: none;
+}
+table {
+  margin: 1.5em 0;
+}
+th {
+  color: #000000;
+}
+th,
+td {
+  padding: 0.66em 1em;
+  border: 1px solid #dcb878;
+}
+code {
+  color: #000000;
+  background-color: #e7cda1;
+}
+pre.editor-colors {
+  margin: 1.5em 0;
+  padding: 1em;
+  font-size: 0.92em;
+  border-radius: 3px;
+  background-color: #e9d1a9;
+}
+kbd {
+  color: #000000;
+  border: 1px solid #dcb878;
+  border-bottom: 2px solid #d6ab60;
+  background-color: #e7cda1;
+}
 
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+.line-number.bracket-matcher.bracket-matcher {
+  color: #2b2c27;
+  background-color: #13a1bb;
+}
 
-## Introduction
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+.spell-check-corrections {
+  width: 25em !important;
+}
 
-In this lesson, we'll review all of the guidelines and specifications for the final project for Module 2.
+pre.editor-colors {
+  background-color: #eddab9;
+  color: #2b2c27;
+}
+pre.editor-colors .wrap-guide {
+  background-color: #8b8a88;
+}
+pre.editor-colors .indent-guide {
+  color: #8b8a88;
+}
+pre.editor-colors .invisible-character {
+  color: #8b8a88;
+}
+pre.editor-colors .gutter {
+  background-color: #eddab9;
+  color: #2b2c27;
+}
+pre.editor-colors .gutter .line-number.cursor-line {
+  background-color: #13a1bb;
+  color: #2b2c27;
+}
+pre.editor-colors .gutter .line-number.cursor-line-no-selection {
+  color: #2b2c27;
+}
+pre.editor-colors .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+pre.editor-colors .fold-marker:after {
+  color: #8b8a88;
+}
+pre.editor-colors .invisible {
+  color: #2b2c27;
+}
+pre.editor-colors .cursor {
+  color: #15b5d2;
+}
+pre.editor-colors .selection .region {
+  background-color: #e7cda1;
+}
+.syntax--comment {
+  color: #8b8a88;
+}
+.syntax--keyword {
+  color: #b53244;
+}
+.syntax--keyword.syntax--control {
+  color: #b53244;
+}
+.syntax--keyword.syntax--operator {
+  color: #2b2c27;
+}
+.syntax--keyword.syntax--other.syntax--special-method {
+  color: #b53244;
+}
+.syntax--keyword.syntax--other.syntax--unit {
+  color: #2b2c27;
+  font-weight: bold;
+}
+.syntax--storage {
+  color: #b53244;
+  font-weight: bold;
+}
+.syntax--constant {
+  color: #b53244;
+}
+.syntax--constant.syntax--character.syntax--escape {
+  color: #15b5d2;
+  font-weight: bold;
+}
+.syntax--constant.syntax--numeric {
+  color: #b53244;
+  font-weight: bold;
+}
+.syntax--constant.syntax--other.syntax--color {
+  color: #2b2c27;
+  font-weight: bold;
+}
+.syntax--constant.syntax--other.syntax--symbol {
+  color: #2b2c27;
+  font-weight: bold;
+}
+.syntax--variable {
+  color: #b53244;
+  font-weight: bold;
+}
+.syntax--variable.syntax--interpolation {
+  color: #8d2735;
+}
+.syntax--variable.syntax--parameter.syntax--function {
+  color: #2b2c27;
+}
+.syntax--invalid.syntax--illegal {
+  background-color: #b53244;
+  color: #eddab9;
+}
+.syntax--string {
+  color: #b53244;
+}
+.syntax--string.syntax--regexp {
+  color: #b53244;
+  font-weight: bold;
+}
+.syntax--string.syntax--regexp .syntax--source.syntax--ruby.syntax--embedded {
+  color: #b53244;
+  font-weight: bold;
+}
+.syntax--string.syntax--other.syntax--link {
+  color: #b53244;
+  font-weight: bold;
+}
+.syntax--punctuation.syntax--definition.syntax--comment {
+  color: #8b8a88;
+}
+.syntax--punctuation.syntax--definition.syntax--string,
+.syntax--punctuation.syntax--definition.syntax--variable,
+.syntax--punctuation.syntax--definition.syntax--parameters,
+.syntax--punctuation.syntax--definition.syntax--array {
+  color: #2b2c27;
+}
+.syntax--punctuation.syntax--definition.syntax--heading,
+.syntax--punctuation.syntax--definition.syntax--identity {
+  color: #2b2c27;
+  font-weight: bold;
+}
+.syntax--punctuation.syntax--definition.syntax--bold {
+  color: #b53244;
+  font-weight: bold;
+}
+.syntax--punctuation.syntax--definition.syntax--italic {
+  color: #b53244;
+  font-style: italic;
+}
+.syntax--punctuation.syntax--section.syntax--embedded {
+  color: #8d2735;
+}
+.syntax--support.syntax--class {
+  color: #b53244;
+  font-weight: bold;
+}
+.syntax--support.syntax--function {
+  color: #2b2c27;
+  font-weight: bold;
+}
+.syntax--support.syntax--function.syntax--any-method {
+  color: #2b2c27;
+  font-weight: bold;
+}
+.syntax--entity.syntax--name.syntax--function {
+  color: #2b2c27;
+  font-weight: bold;
+}
+.syntax--entity.syntax--name.syntax--type {
+  color: #b53244;
+  text-decoration: underline;
+}
+.syntax--entity.syntax--other.syntax--inherited-class {
+  color: #15b5d2;
+  font-weight: bold;
+}
+.syntax--entity.syntax--name.syntax--class,
+.syntax--entity.syntax--name.syntax--type.syntax--class {
+  color: #b53244;
+  font-weight: bold;
+}
+.syntax--entity.syntax--name.syntax--section {
+  color: #15b5d2;
+  font-weight: bold;
+}
+.syntax--entity.syntax--name.syntax--tag {
+  color: #b53244;
+  text-decoration: underline;
+}
+.syntax--entity.syntax--other.syntax--attribute-name {
+  color: #2b2c27;
+}
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--id {
+  color: #15b5d2;
+  font-weight: bold;
+}
+.syntax--meta.syntax--class {
+  color: #b53244;
+  font-weight: bold;
+}
+.syntax--meta.syntax--link {
+  color: #b53244;
+}
+.syntax--meta.syntax--require {
+  color: #15b5d2;
+  font-weight: bold;
+}
+.syntax--meta.syntax--selector {
+  color: #b53244;
+  font-weight: bold;
+}
+.syntax--meta.syntax--separator {
+  background-color: #eddab9;
+  color: #2b2c27;
+}
+.syntax--none {
+  color: #2b2c27;
+}
+.syntax--markup.syntax--bold {
+  color: #b53244;
+  font-weight: bold;
+}
+.syntax--markup.syntax--changed {
+  color: #b53244;
+}
+.syntax--markup.syntax--deleted {
+  color: #b53244;
+}
+.syntax--markup.syntax--italic {
+  color: #b53244;
+  font-style: italic;
+}
+.syntax--markup.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
+  color: #15b5d2;
+  font-weight: bold;
+}
+.syntax--markup.syntax--inserted {
+  color: #15b5d2;
+  font-weight: bold;
+}
+.syntax--markup.syntax--list {
+  color: #b53244;
+  font-weight: bold;
+}
+.syntax--markup.syntax--quote {
+  color: #b53244;
+}
+.syntax--markup.syntax--raw.syntax--inline {
+  color: #15b5d2;
+  font-weight: bold;
+}
+.syntax--source.syntax--gfm .syntax--markup {
+  -webkit-font-smoothing: auto;
+}
+.syntax--source.syntax--gfm .syntax--markup.syntax--heading {
+  color: #15b5d2;
+  font-weight: bold;
+}
+pre.editor-colors[mini] .scroll-view {
+  padding-left: 1px;
+}
 
-## Objectives
-You will be able to:
-* Describe all required aspects of the final project for Module 2
-* Describe all required deliverables
-* Describe what constitutes a successful project
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed and saved.
+ *
+ * Add your own CSS or Less to fully customize Atom.
+ * If you are unfamiliar with Less, you can read more about it here:
+ * http://lesscss.org
+ */
+/*
+ * Examples
+ * (To see them, uncomment and save)
+ */
+.script-view .line {
+  font-size: 14px;
+  margin: 2.5px;
+}
+.scrollbars-visible-always /deep/ ::-webkit-scrollbar {
+  width: 20px;
+  height: 20px;
+}
+.scrollbars-visible-always /deep/ ::-webkit-scrollbar-track {
+  border: 0px;
+  border-radius: 0px;
+  background-color: #444 !important;
+}
+.scrollbars-visible-always /deep/ ::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 200, 200, 0.35) !important;
+  border: 0px;
+  border-radius: 9px;
+}
+</style>
 
-## Final Project Summary
+  </head>
+  <body>
+    <h1>Module 1 Final Project</h1>
+<p><img src="..\..\gen Reference\images\thebossbaby-happy-baby.gif" alt="Happy Clap GIF By The Boss Baby"></p>
+<h2>Introduction</h2>
+<p>This project focuses on building a multiple linear regression model capable of predicting home prices.</p>
+<h2>Objectives</h2>
+<p>Through this project, I explore the following questions and why:</p>
+<ul>
+<li>Which variables show the strongest correlations with price?</li>
+<li>Which variables (whether redundant or un - influential) can or should be eliminated toward building a predictive model for predicting home price?</li>
+<li>Does model effectiveness vary across zip codes?</li>
+</ul>
+<h1>The Dataset</h1>
+<p>King County housing data was provided for this project as a single, comma - separated flat file. The file includes housing records for greater than 20,000 properties. Also provided was the following column names and data description for the data set:</p>
+<ul>
+<li>id - unique identified for a house</li>
+<li>date - house was sold</li>
+<li>price - is prediction target</li>
+<li>bedrooms - Number of Bedrooms/House</li>
+<li>bathrooms - Number of bathrooms/bedrooms</li>
+<li>sqft_living - square footage of the home</li>
+</ul>
+<details>
+  <summary>Click to view more!</summary>
+<ul>
+<li>sqft_lot - square footage of the lot</li>
+<li>floors - floors (levels) in house</li>
+<li>waterfront - House which has a view to a waterfront</li>
+<li>view - Has been viewed</li>
+<li>condition - How good the condition is ( Overall )</li>
+<li>grade - overall grade given to the housing unit, based on King County grading system</li>
+<li>sqft_above - square footage of house apart from basement</li>
+<li>sqft_basement - square footage of the basement</li>
+<li>yr_built - Built Year</li>
+<li>yr_renovated - Year when house was renovated</li>
+<li>zipcode - zip</li>
+<li>lat - Latitude coordinate</li>
+<li>long - Longitude coordinate</li>
+<li>sqft_living15 - The square footage of interior housing living space for the nearest 15 neighbors</li>
+<li>sqft_lot15 - The square footage of the land lots of the nearest 15 neighbors</li>
+</ul>
+</details>
+<h1>Featured Notebooks/Analysis</h1>
+<ul>
+<li>
+<p><a href="/blob/master/student.ipynb"><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">student</code>: <strong>Jupyter Notebook</strong></a>: containing code written for this project and comments explaining it.</p>
+</li>
+<li>
+<p><a href="/blob/master/1-obtain-and-scrub.ipynb"><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">cleaning-notebook</code></a>: [notebook segment] Import and Clean Data</p>
+</li>
+<li>
+<p><a href="/blob/master/2-eda-and-transform.ipynb"><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">exploratory notebook</code></a>: [notebook segment] Explore, visualize, and Analyze</p>
+</li>
+<li>
+<p><a href="/blob/master/3-model-and-conclude.ipynb"><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">modeling-notebook</code></a>: [notebook segment] Build, Train, and Test Regression models</p>
+</li>
+</ul>
+<h4>Visualizations &amp; EDA</h4>
+<ul>
+<li>visualizations, with corresponding interpretations are included within the the relevant notebook(s).</li>
+</ul>
+<h3>Non-Technical Presentation</h3>
+<ul>
+<li><a href="../blob/master/presentation.pdf">presentation.pdf</a> summarizing  methodology and findings</li>
+</ul>
+<h1>Technologies</h1>
+<p>framework: jupyter notebook
+languages: python
+libraries: pandas, numpy, scipy, statsmodels, sci-kit learn, pickle
+plot Libraries: seaborn, matplotlib</p>
 
-Another module down--you're half way there!
-
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-mod-2-project-v2-1/master/halfway-there.gif)
-
-All that remains in Module 2 is to put our newfound data science skills to use with a final project! You should expect this project to take between 20 and 25 hours of solid, focused effort. If you're done way quicker, go back and dig in deeper or try some of the optional "level up" suggestions. If you're worried that you're going to get to 30 hrs and still not even have the data imported, reach out to an instructor in Slack ASAP to get some help!
-
-## The Dataset
-
-For this project, you'll be working with the King County House Sales dataset. We've modified the dataset to make it a bit more fun and challenging.  The dataset can be found in the file `"kc_house_data.csv"`, in this repo.
-
-The description of the column names can be found in the column_names.md file in this repository. As with most real world data sets, the column names are not perfectly described, so you'll have to do some research or use your best judgment if you have questions relating to what the data means.
-
-You'll clean, explore, and model this dataset with a multivariate linear regression to predict the sale price of houses as accurately as possible.
-
-## The Deliverables
-
-For online students, there will be five deliverables for this project (Note: On-campus students may have different requirements, please speak with your instructor):
-
-1. A well documented **Jupyter Notebook** containing any code you've written for this project and comments explaining it. This work will need to be pushed to your GitHub repository in order to submit your project.  
-2. An organized **README.md** file in the GitHub repository that describes the contents of the repository. This file should be the source of information for navigating through the repository.
-3. A short **Keynote/PowerPoint/Google Slides presentation** (delivered as a PDF export) giving a high-level overview of your methodology and recommendations for non-technical stakeholders. Make sure to also add and commit this pdf of your non-technical presentation to your repository with a file name of presentation.pdf.
-4. **[A Blog Post](https://github.com/learn-co-curriculum/dsc-welcome-blogging-v2-1)**	
-5. A **Video Walkthrough** of your non-technical presentation. Some common video recording tools used are Zoom, Quicktime, and Nimbus. After you record your presentation, publish it on a service like YouTube or Google Drive, you will need a link to the video to submit your project.
-
-Note: On-campus students may have different requirements, please speak with your instructor.
-
-### Jupyter Notebook Must-Haves
-
-For this project, your Jupyter Notebook should meet the following specifications:
-
-#### Organization/Code Cleanliness
-
-* The notebook should be well organized, easy to follow,  and code should be commented where appropriate.  
-    * Level Up: The notebook contains well-formatted, professional looking markdown cells explaining any substantial code.  All functions have docstrings that act as professional-quality documentation
-* The notebook is written for technical audiences with a way to both understand your approach and reproduce your results. The target audience for this deliverable is other data scientists looking to validate your findings.
-
-#### Visualizations & EDA
-
-* Your project contains at least 4 meaningful data visualizations, with corresponding interpretations. All visualizations are well labeled with axes labels, a title, and a legend (when appropriate)  
-* You pose at least 3 meaningful questions and answer them through EDA.  These questions should be well labeled and easy to identify inside the notebook.
-    * **Level Up**: Each question is clearly answered with a visualization that makes the answer easy to understand.   
-* Your notebook should contain 1 - 2 paragraphs briefly explaining your approach to this project.
-
-#### Model Quality/Approach
-
-* Your model should not include any predictors with p-values greater than .05.  
-* Your notebook shows an iterative approach to modeling, and details the parameters and results of the model at each iteration.  
-    * **Level Up**: Whenever necessary, you briefly explain the changes made from one iteration to the next, and why you made these choices.  
-* You provide at least 1 paragraph explaining your final model.   
-* You pick at least 3 coefficients from your final model and explain their impact on the price of a house in this dataset.   
-
-
-### Non-Technical Presentation Must-Haves
-
-Another deliverable should be a Keynote, PowerPoint or Google Slides presentation delivered as a pdf file in your fork of this repository with the file name of `presentation.pdf` detailing the results of your project.  Your target audience is non-technical people interested in using your findings to maximize their profit when selling their home.
-
-Your presentation should:
-
-* Contain between 5 - 10 professional-quality slides.  
-    * **Level Up**: The slides should use visualizations whenever possible, and avoid walls of text.
-* Take no more than 5 minutes to present.   
-* Avoid technical jargon and explain the results in a clear, actionable way for non-technical audiences.   
-
-**_Based on the results of your models, your presentation should discuss at least two concrete features that highly influence housing prices._**
-
-### Blog Post Must-Haves
-
-Refer back to the [Blogging Guidelines](https://github.com/learn-co-curriculum/dsc-welcome-blogging-v2-1) for the technical requirements and blog ideas.
-
-
-## The Process 
-The process for this project is identical to the process you followed for your module 1 project. We specified it again below as a refresher.
-(Note: On-campus students may have different processes, please speak with your instructor)
-
-### 1. Getting Started
-
-Please start by reviewing this document. If you have any questions, please ask them in Slack ASAP so (a) we can answer the questions and (b) so we can update this repository to make it clearer.
-
-Be sure to let the instructor team know when you’ve started working on a project, either by reaching out over Slack or, if you are in a full-time or part-time cohort, by connecting with your Cohort Lead in your weekly 1:1. If you’re not sure who to reach out to, post in the #online-ds-sp-000 channel in Slack.
-
-Once you're done with this module, please start on the project. Do that by forking this repository, cloning it locally, and working in the student.ipynb file. Make sure to also add and commit a pdf of your presentation to the repository with a file name of `presentation.pdf`.
-
-### 2. The Project Review
-
-_Note: On-campus students may have different review processes, please speak with your instructor._
-
-> **When you start on the project, please also reach out to an instructor immediately to schedule your project review** (if you're not sure who to schedule with, please ask in Slack!)
-
-#### What to expect from the Project Review
-
-Project reviews are focused on preparing you for technical interviews. Treat project reviews as if they were technical interviews, in both attitude and technical presentation *(sometimes technical interviews will feel arbitrary or unfair - if you want to get the job, commenting on that is seldom a good choice)*.
-
-The project review is comprised of a 45 minute 1:1 session with one of the instructors. During your project review, be prepared to:
-
-#### 1. Deliver your PDF presentation to a non-technical stakeholder.
-In this phase of the review (~10 mins) your instructor will play the part of a non-technical stakeholder that you are presenting your findings to. The presentation  should not exceed 5 minutes, giving the "stakeholder" 5 minutes to ask questions.
-
-In the first half of the presentation (2-3 mins), you should summarize your methodology in a way that will be comprehensible to someone with no background in data science and that will increase their confidence in you and your findings. In the second half (the remaining 2-3 mins) you should summarize your findings and be ready to answer a couple of non-technical questions from the audience. The questions might relate to technical topics (sampling bias, confidence, etc) but will be asked in a non-technical way and need to be answered in a way that does not assume a background in statistics or machine learning. You can assume a smart, business stakeholder, with a non-quantitative college degree.
-
-#### 2. Go through the Jupyter Notebook, answering questions about how you made certain decisions. Be ready to explain things like:
-    * "How did you pick the question(s) that you did?"
-    * "Why are these questions important from a business perspective?"
-    * "How did you decide on the data cleaning options you performed?"
-    * "Why did you choose a given method or library?"
-    * "Why did you select those visualizations and what did you learn from each of them?"
-    * "Why did you pick those features as predictors?"
-    * "How would you interpret the results?"
-    * "How confident are you in the predictive quality of the results?"
-    * "What are some of the things that could cause the results to be wrong?"
-
-Think of the first phase of the review (~30 mins) as a technical boss reviewing your work and asking questions about it before green-lighting you to present to the business team. You should practice using the appropriate technical vocabulary to explain yourself. Don't be surprised if the instructor jumps around or sometimes cuts you off - there is a lot of ground to cover, so that may happen.
-
-If any requirements are missing or if significant gaps in understanding are uncovered, be prepared to do one or all of the following:
-* Perform additional data cleanup, visualization, feature selection, modeling and/or model validation
-* Submit an improved version
-* Meet again for another Project Review
-
-What won't happen:
-* You won't be yelled at, belittled, or scolded
-* You won't be put on the spot without support
-* There's nothing you can do to instantly fail or blow it
-
-**Please note: We need to receive the URL of your repository at least 24 hours before and please have the project finished at least 3 hours before your review so we can look at your materials in advance.**
-
-
-## Submitting your Project
-
- You’re almost done! In order to submit your project for review, include the following links to your work in the corresponding fields on the right-hand side of Learn.
-
- 1. **GitHub Repo:** Now that you’ve completed your project in Jupyter Notebooks, push your work to GitHub and paste that link to the right. (If you need help doing so, review the resources [here](https://docs.google.com/spreadsheets/d/1CNGDhjcQZDRx2sWByd2v-mgUOjy13Cd_hQYVXPuzEDE/edit#gid=0).)
-_Reminder: Make sure to also add and commit a pdf of your non-technical presentation to the repository with a file name of presentation.pdf._
-2. **Blog Post:** Include a link to your blog post.
-3. **Record Walkthrough:** Include a link to your video walkthrough.
-
- Hit "I'm done" to wrap it up. You will receive an email in order to schedule your review with your instructor.
- 
- 
-## Grading Rubric
-Online students can find a PDF of the grading rubric for the project [here](https://github.com/learn-co-curriculum/dsc-v2-mod2-final-project/blob/master/module2_project_rubric.pdf). On-campus students may have different review processes, please speak with your instructor.
-
-
-## Summary
-
-The end of module projects and project reviews are a critical part of the program. They give you a chance to both bring together all the skills you've learned into realistic projects and to practice key "business judgement" and communication skills that you otherwise might not get as much practice with.
+  </body>
+</html>
