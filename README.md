@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html data-markdown-preview-plus-context="html-export">
-  <head>
-    <meta charset="utf-8" />
-    <title>README</title>
-    <style>.emoji {
-  max-width: 1em !important;
-}
-
-  </head>
   <body>
     <h1>Module 1 Final Project</h1>
 <p><img src="images\thebossbaby-happy-baby.gif" alt="Happy Clap GIF By The Boss Baby"></p>
@@ -80,4 +70,3 @@ libraries: pandas, numpy, scipy, statsmodels, sci-kit learn, pickle
 plot Libraries: seaborn, matplotlib</p>
 
   </body>
-</html>
