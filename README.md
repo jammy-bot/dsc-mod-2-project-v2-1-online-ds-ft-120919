@@ -1,5 +1,5 @@
   <body>
-    <h1>Module 1 Final Project</h1>
+    <h1>Module 2 Final Project</h1>
 <p><img src="images\thebossbaby-happy-baby.gif" alt="Happy Clap GIF By The Boss Baby"></p>
 <h2>Introduction</h2>
 <p>This project focuses on building a multiple linear regression model capable of predicting home prices.</p>
