@@ -55,9 +55,10 @@
 <p><a href="/blob/master/3-model-and-conclude.ipynb"><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">modeling-notebook</code></a>: [notebook segment] Build, Train, and Test Regression models</p>
 </li>
 </ul>
-<h4>Visualizations &amp; EDA</h4>
+<h3>Visualizations &amp; EDA</h3>
 <ul>
-<li>visualizations, with corresponding interpretations are included within the the relevant notebook(s).</li>
+<p><img src="images\kc-prices-overview.png" alt="King County prices overview"></p>
+<li>visualizations, with corresponding interpretations are included within the relevant notebook(s).</li>
 </ul>
 <h3>Non-Technical Presentation</h3>
 <ul>
