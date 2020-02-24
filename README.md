@@ -4,6 +4,7 @@
 <h2>Introduction</h2>
 <p>This project focuses on building a multiple linear regression model capable of predicting home prices.</p>
 <h2>Objectives</h2>
+<p><img src="images\check-waterfront-nulls.jpg" alt="Happy Clap GIF By The Boss Baby"></p>
 <p>Through this project, I explore the following questions and why:</p>
 <ul>
 <li>Which variables show the strongest correlations with price?</li>
@@ -11,6 +12,7 @@
 <li>Does model effectiveness vary across zip codes?</li>
 </ul>
 <h1>The Dataset</h1>
+<p><img src="images\correlations-heatmap.png" alt="correlations heatmap"></p>
 <p>King County housing data was provided for this project as a single, comma - separated flat file. The file includes housing records for greater than 20,000 properties. Also provided was the following column names and data description for the data set:</p>
 <ul>
 <li>id - unique identified for a house</li>
@@ -46,13 +48,13 @@
 <p><a href="/blob/master/student.ipynb"><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">student</code>: <strong>Jupyter Notebook</strong></a>: containing code written for this project and comments explaining it.</p>
 </li>
 <li>
-<p><a href="/blob/master/1-obtain-and-scrub.ipynb"><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">cleaning-notebook</code></a>: [notebook segment] Import and Clean Data</p>
+<p><a href="1-obtain-and scrub.ipynb"><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">cleaning-notebook</code></a>: [notebook segment] Import and Clean Data</p>
 </li>
 <li>
-<p><a href="/blob/master/2-eda-and-transform.ipynb"><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">exploratory notebook</code></a>: [notebook segment] Explore, visualize, and Analyze</p>
+<p><a href="2-eda-and-transform.ipynb"><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">exploratory notebook</code></a>: [notebook segment] Explore, visualize, and Analyze</p>
 </li>
 <li>
-<p><a href="/blob/master/3-model-and-conclude.ipynb"><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">modeling-notebook</code></a>: [notebook segment] Build, Train, and Test Regression models</p>
+<p><a href="3-model-and-conclude.ipynb"><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">modeling-notebook</code></a>: [notebook segment] Build, Train, and Test Regression models</p>
 </li>
 </ul>
 <h3>Visualizations &amp; EDA</h3>
