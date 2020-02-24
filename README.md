@@ -45,7 +45,7 @@
 <h1>Featured Notebooks/Analysis</h1>
 <ul>
 <li>
-<p><a href="/blob/master/student.ipynb"><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">student</code>: <strong>Jupyter Notebook</strong></a>: containing code written for this project and comments explaining it.</p>
+<p><a href="student.ipynb"><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">student</code>: <strong>Jupyter Notebook</strong></a>: containing code written for this project and comments explaining it.</p>
 </li>
 <li>
 <p><a href="1-obtain-and scrub.ipynb"><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">cleaning-notebook</code></a>: [notebook segment] Import and Clean Data</p>
