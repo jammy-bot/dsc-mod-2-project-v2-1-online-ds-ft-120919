@@ -71,9 +71,9 @@
 <li><a href="../blob/master/presentation.pdf">presentation.pdf</a> summarizing  methodology and findings</li>
 </ul>
 <h1>Technologies</h1>
-<p>framework: jupyter notebook
-languages: python
-libraries: pandas, numpy, scipy, statsmodels, sci-kit learn, pickle
-plot libraries: seaborn, matplotlib</p>
+<p>framework: jupyter notebook</p>
+<p>languages: python</p>
+<p>libraries: pandas, numpy, scipy, statsmodels, sci-kit learn, pickle</p>
+<p>plot libraries: seaborn, matplotlib</p>
 
   </body>
