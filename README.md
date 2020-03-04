@@ -7,9 +7,13 @@
 <p><img src="images\check-waterfront-nulls.jpg" alt="Happy Clap GIF By The Boss Baby"></p>
 <p>Through this project, I explore the following questions and why:</p>
 <ul>
-<li>Which variables show the strongest correlations with price?</li>
-<li>Which variables (whether redundant or un - influential) can or should be eliminated toward building a predictive model for predicting home price?</li>
-<li>Does model effectiveness vary across zip codes?</li>
+
+<li>What is the mean price for homes in King County?</li>
+<li>What is the mean price within 20 miles of the city center?</li>
+<li>What is the mean number of bedrooms for home sales?</li>
+<li>Which influences price more: the number of bedrooms or the number of square feet?</li>
+<li>Do renovations make a significant difference in such a competitive market?</li>
+
 </ul>
 <h1>The Dataset</h1>
 <p><img src="images\correlations-heatmap.png" alt="correlations heatmap"></p>
@@ -54,7 +58,7 @@
 <p><a href="2-eda-and-transform.ipynb"><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">exploratory notebook</code></a>: [notebook segment] Explore, visualize, and Analyze</p>
 </li>
 <li>
-<p><a href="3-model-and-conclude.ipynb"><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">modeling-notebook</code></a>: [notebook segment] Build, Train, and Test Regression models</p>
+<p><a href="3-model-and-conclude.ipynb"><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">Final-modeling-notebook</code></a>: [notebook segment] Build, Train, and Test Regression models</p>
 </li>
 </ul>
 <h3>Visualizations &amp; EDA</h3>
@@ -70,6 +74,6 @@
 <p>framework: jupyter notebook
 languages: python
 libraries: pandas, numpy, scipy, statsmodels, sci-kit learn, pickle
-plot Libraries: seaborn, matplotlib</p>
+plot libraries: seaborn, matplotlib</p>
 
   </body>
