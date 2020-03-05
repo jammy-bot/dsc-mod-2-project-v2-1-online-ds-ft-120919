@@ -68,7 +68,7 @@
 </ul>
 <h3>Non-Technical Presentation</h3>
 <ul>
-<li><a href="../blob/master/presentation.pdf">presentation.pdf</a> summarizing  methodology and findings</li>
+<li><a href="presentation.pdf">presentation.pdf</a> summarizing projects and findings for a fictional sponsor</li>
 </ul>
 <h1>Technologies</h1>
 <p>framework: jupyter notebook</p>
